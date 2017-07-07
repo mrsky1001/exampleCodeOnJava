@@ -1,9 +1,6 @@
 package net.thumbtack.kolyada.task1;
 
-/**
- * Hello world!
- *
- */
+
 public class Task1
 {
     public static void main( String[] args )

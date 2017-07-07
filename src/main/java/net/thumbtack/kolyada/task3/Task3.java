@@ -1,13 +1,24 @@
 package net.thumbtack.kolyada.task3;
 
-/**
- * Hello world!
- *
- */
+import net.thumbtack.kolyada.dao.Dao;
+
+import java.util.Arrays;
+
+
 public class Task3
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    public static void main( String[] args ){
+        System.out.println(Arrays.toString(args));
+
+        double[] argsNew = Dao.parseDoubleArray(args);
+
+        System.out.println("a + b = " + (argsNew[0] + argsNew[1]));
+        System.out.println("a * b = " + (argsNew[0] * argsNew[1]));
+        if (argsNew[0] > argsNew[1])
+            System.out.println("a > b");
+        else if (argsNew[0] > argsNew[1])
+            System.out.println("a < b");
+        else if (argsNew[0] > argsNew[1])
+            System.out.println("a == b");
     }
 }
